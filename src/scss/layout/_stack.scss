@@ -1,0 +1,85 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the stack section of the site/application.
+// -----------------------------------------------------------------------------
+
+.stack {
+
+    h2 {
+        font-size: 4rem;
+    }
+
+    h3 {
+        font-size: 1.7rem;
+        font-weight: 100;
+        line-height: 2.8rem;
+        width: 55%;
+    }
+
+    h2,
+    h3 {
+        margin-bottom: 5rem;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        list-style: square;
+    }
+
+    &__icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2.5rem 0rem;
+        flex: 25%;
+
+        p {
+            font-size: 1.8rem;
+            margin-top: 1rem;
+        }
+
+        img {
+            height: 5rem;
+            width: 5rem;
+            cursor: pointer;
+
+            transition: .2s all ease-in-out;
+
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+
+        &--node {
+            img {
+                transform: scale(1.5);
+
+                &:hover {
+                    transform: scale(1.7);
+                }
+            }
+        }
+
+        &--mongodb {
+            img {
+                transform: scale(2.3);
+
+                &:hover {
+                    transform: scale(2.5);
+                }
+            }
+        }
+
+        &--git {
+            img {
+                justify-content: center;
+                transform: scale(1.3);
+
+                &:hover {
+                    transform: scale(1.5);
+                }
+            }
+        }
+    }
+}

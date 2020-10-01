@@ -70,8 +70,9 @@ ul {
     .socials__list::before {
       display: flex;
       justify-content: center;
-      content: '_________________';
+      content: '__________________________________';
       font-size: 1.5rem;
+      font-weight: 900;
       margin-right: 3rem; }
   .socials__item img {
     height: 2.8rem;
@@ -83,3 +84,52 @@ ul {
       margin-right: 3rem; }
     .socials__item img:hover {
       filter: grayscale(100%); }
+
+.stack h2 {
+  font-size: 4rem; }
+
+.stack h3 {
+  font-size: 1.7rem;
+  font-weight: 100;
+  line-height: 2.8rem;
+  width: 55%; }
+
+.stack h2,
+.stack h3 {
+  margin-bottom: 5rem; }
+
+.stack__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  list-style: square; }
+
+.stack__icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2.5rem 0rem;
+  flex: 25%; }
+  .stack__icon p {
+    font-size: 1.8rem;
+    margin-top: 1rem; }
+  .stack__icon img {
+    height: 5rem;
+    width: 5rem;
+    cursor: pointer;
+    transition: .2s all ease-in-out; }
+    .stack__icon img:hover {
+      transform: scale(1.2); }
+  .stack__icon--node img {
+    transform: scale(1.5); }
+    .stack__icon--node img:hover {
+      transform: scale(1.7); }
+  .stack__icon--mongodb img {
+    transform: scale(2.3); }
+    .stack__icon--mongodb img:hover {
+      transform: scale(2.5); }
+  .stack__icon--git img {
+    justify-content: center;
+    transform: scale(1.3); }
+    .stack__icon--git img:hover {
+      transform: scale(1.5); }

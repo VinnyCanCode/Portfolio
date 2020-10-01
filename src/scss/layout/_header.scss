@@ -32,8 +32,9 @@ header {}
         &::before {
             display: flex;
             justify-content: center;
-            content: '_________________';
+            content: '__________________________________';
             font-size: 1.5rem;
+            font-weight: 900;
             margin-right: 3rem;
         }
     }
