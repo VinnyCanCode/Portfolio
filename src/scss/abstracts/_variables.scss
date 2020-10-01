@@ -2,8 +2,24 @@
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
 
+@font-face {
+    font-family: 'Maharlika-Regular';
+    src: url('./fonts/Maharlika-Regular.ttf') format('ttf'),
+        url('./fonts/Maharlika-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
 
+// FONT VARIABLES
+$primary-font: 'Maharlika-Regular',
+sans-serif;
+
+
+// COLOR VARIABLES
 $github-black: #212121;
+$color-black: #000807;
+$avatar-red: #df4e3b;
+
 
 
 $borderTest: red 1px solid;
