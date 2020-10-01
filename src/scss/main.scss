@@ -2,4 +2,14 @@
 // This file contains all imported sass files
 // -----------------------------------------------------------------------------
 
-@import 'base/base'
+// ABSTRACT SCSS FILES 
+@import 'abstracts/variables';
+
+// BASE SCSS FILES
+@import 'base/base';
+
+// COMPONENTS SCSS FILES
+@import 'components/logo';
+
+// LAYOUT SCSS FILES
+@import 'layout/header';

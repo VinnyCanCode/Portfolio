@@ -1,3 +1,53 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+
+header {}
+
+.pageLinks {
+
+    margin: 2rem 0rem;
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        font-size: 1.6rem;
+
+        &:not(:last-of-type) {
+            margin-right: 2rem;
+        }
+    }
+}
+
+.socials {
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+
+        img {
+            height: 2.5rem;
+            width: 2.5rem;
+            // filter: grayscale(1);
+            color: gray;
+            cursor: pointer;
+
+            svg {
+                color: gray;
+            }
+
+            &:not(:last-of-type) {
+                margin-right: 2rem;
+            }
+
+            &:hover {
+                filter: grayscale(0);
+            }
+        }
+
+    }
+}

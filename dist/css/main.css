@@ -1,0 +1,41 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 62.5%; }
+
+body {
+  padding: 10rem; }
+
+ul {
+  list-style: none; }
+
+.pageLinks {
+  margin: 2rem 0rem; }
+  .pageLinks__list {
+    display: flex; }
+  .pageLinks__item {
+    font-size: 1.6rem; }
+    .pageLinks__item:not(:last-of-type) {
+      margin-right: 2rem; }
+
+.socials__list {
+  display: flex; }
+
+.socials__item img {
+  height: 2.5rem;
+  width: 2.5rem;
+  color: gray;
+  cursor: pointer; }
+  .socials__item img svg {
+    color: gray; }
+  .socials__item img:not(:last-of-type) {
+    margin-right: 2rem; }
+  .socials__item img:hover {
+    filter: grayscale(0); }
