@@ -16,26 +16,70 @@ body {
 ul {
   list-style: none; }
 
+.logo {
+  margin-bottom: 10rem; }
+
+.about {
+  margin-bottom: 10rem; }
+  .about__title {
+    font-size: 6rem;
+    font-weight: 100;
+    padding-left: 10rem;
+    margin-bottom: 5rem; }
+    .about__title span {
+      color: red; }
+  .about__section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 1.7rem;
+    line-height: 2.9rem;
+    font-weight: 100; }
+    .about__section p {
+      display: inline-block;
+      float: right;
+      margin-left: 2rem;
+      width: 35%; }
+      .about__section p:first-child {
+        float: left; }
+      .about__section p:last-of-type {
+        width: 50%;
+        text-align: center;
+        margin-top: 3rem; }
+  .about__picture img {
+    height: 32rem;
+    width: 28rem;
+    border: 2px solid transparent;
+    border-radius: 50%; }
+
 .pageLinks {
-  margin: 2rem 0rem; }
+  margin-bottom: 5rem; }
   .pageLinks__list {
     display: flex; }
   .pageLinks__item {
-    font-size: 1.6rem; }
+    font-size: 1.6rem;
+    cursor: pointer; }
     .pageLinks__item:not(:last-of-type) {
-      margin-right: 2rem; }
+      margin-right: 5rem; }
 
-.socials__list {
-  display: flex; }
-
-.socials__item img {
-  height: 2.5rem;
-  width: 2.5rem;
-  color: gray;
-  cursor: pointer; }
-  .socials__item img svg {
-    color: gray; }
-  .socials__item img:not(:last-of-type) {
-    margin-right: 2rem; }
-  .socials__item img:hover {
-    filter: grayscale(0); }
+.socials {
+  margin-bottom: 5rem; }
+  .socials__list {
+    display: flex; }
+    .socials__list::before {
+      display: flex;
+      justify-content: center;
+      content: '_________________';
+      font-size: 1.5rem;
+      margin-right: 3rem; }
+  .socials__item img {
+    height: 2.8rem;
+    width: 2.8rem;
+    cursor: pointer; }
+    .socials__item img svg {
+      border: red 1px solid; }
+    .socials__item img:not(:last-of-type) {
+      margin-right: 3rem; }
+    .socials__item img:hover {
+      filter: grayscale(100%); }

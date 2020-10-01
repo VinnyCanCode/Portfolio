@@ -6,7 +6,7 @@ header {}
 
 .pageLinks {
 
-    margin: 2rem 0rem;
+    margin-bottom: 5rem;
 
     &__list {
         display: flex;
@@ -14,38 +14,50 @@ header {}
 
     &__item {
         font-size: 1.6rem;
+        cursor: pointer;
 
         &:not(:last-of-type) {
-            margin-right: 2rem;
+            margin-right: 5rem;
         }
     }
 }
 
 .socials {
 
+    margin-bottom: 5rem;
+
     &__list {
         display: flex;
+
+        &::before {
+            display: flex;
+            justify-content: center;
+            content: '_________________';
+            font-size: 1.5rem;
+            margin-right: 3rem;
+        }
     }
 
     &__item {
 
         img {
-            height: 2.5rem;
-            width: 2.5rem;
+            height: 2.8rem;
+            width: 2.8rem;
             // filter: grayscale(1);
-            color: gray;
+            // color: gray;
             cursor: pointer;
 
             svg {
-                color: gray;
+                // fill: gray;
+                border: $borderTest;
             }
 
             &:not(:last-of-type) {
-                margin-right: 2rem;
+                margin-right: 3rem;
             }
 
             &:hover {
-                filter: grayscale(0);
+                filter: grayscale(100%);
             }
         }
 
