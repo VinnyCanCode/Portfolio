@@ -1,3 +1,26 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    margin-top: 10rem;
+
+
+    &__social {
+
+        ul {
+            display: flex;
+            flex-direction: row;
+        }
+
+        li {
+            font-size: 1.6rem;
+            margin-right: 4rem;
+            cursor: pointer;
+        }
+    }
+}

@@ -18,6 +18,8 @@ ul {
 
 .logo {
   margin-bottom: 10rem; }
+  .logo__footer {
+    margin-bottom: 0rem; }
 
 .about {
   margin-bottom: 10rem; }
@@ -52,6 +54,19 @@ ul {
     width: 28rem;
     border: 2px solid transparent;
     border-radius: 50%; }
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 10rem; }
+  .footer__social ul {
+    display: flex;
+    flex-direction: row; }
+  .footer__social li {
+    font-size: 1.6rem;
+    margin-right: 4rem;
+    cursor: pointer; }
 
 .pageLinks {
   margin-bottom: 5rem; }
