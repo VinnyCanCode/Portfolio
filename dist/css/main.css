@@ -133,6 +133,20 @@ header {
       filter: opacity(1);
       transform: rotate(-10deg); }
 
+.projects {
+  display: flex; }
+  .projects__1, .projects__2, .projects__3 {
+    height: 70vh;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .projects__1 img, .projects__2 img, .projects__3 img {
+      object-fit: contain;
+      display: block;
+      width: 100%; }
+
 .stack h2 {
   font-size: 4rem; }
 
