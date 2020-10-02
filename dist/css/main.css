@@ -159,11 +159,9 @@ header {
   margin: 2.5rem 0rem;
   flex: 25%;
   cursor: pointer; }
-  .stack__icon:hover img {
-    transform: scale(1.2); }
   .stack__icon:hover p {
     border-bottom-color: #df4e3b; }
-    .stack__icon:hover p::before {
+    .stack__icon:hover p:before {
       opacity: 0; }
   .stack__icon p {
     font-size: 1.7rem;
@@ -173,6 +171,8 @@ header {
     position: relative;
     border-bottom: 2px solid transparent;
     transition: .2s all ease-in-out; }
+    .stack__icon p:hover {
+      border-bottom-color: #df4e3b; }
     .stack__icon p:before {
       position: absolute;
       content: ' ';
@@ -181,13 +181,14 @@ header {
       background-image: url("../imgs/dot.svg");
       background-size: 1rem;
       height: 1rem;
-      width: 1rem;
-      transition: .2s opacity ease-in-out; }
+      width: 1rem; }
   .stack__icon img {
     height: 5rem;
     width: 5rem;
     cursor: pointer;
     transition: .2s all ease-in-out; }
+    .stack__icon img:hover {
+      transform: scale(1.2); }
   .stack__icon--node img {
     transform: scale(1.5); }
     .stack__icon--node img:hover {
