@@ -134,7 +134,29 @@ header {
       transform: rotate(-10deg); }
 
 .projects {
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .projects h3 {
+    margin: 1rem 0rem;
+    font-size: 4rem;
+    font-weight: 100; }
+    .projects h3 span {
+      font-size: 2.5rem;
+      margin: 0 .5rem; }
+  .projects p a,
+  .projects p a:active,
+  .projects p a:link,
+  .projects p a:visited {
+    color: inherit;
+    text-decoration: none;
+    font-size: 1.5rem;
+    border-bottom: 2px solid transparent; }
+    .projects p a:hover,
+    .projects p a:active:hover,
+    .projects p a:link:hover,
+    .projects p a:visited:hover {
+      border-color: #df4e3b; }
   .projects__1, .projects__2, .projects__3 {
     height: 70vh;
     width: 40vw;
@@ -146,6 +168,10 @@ header {
       object-fit: contain;
       display: block;
       width: 100%; }
+  .projects__links {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly; }
 
 .stack h2 {
   font-size: 4rem; }
