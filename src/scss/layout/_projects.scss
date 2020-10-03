@@ -7,7 +7,33 @@
     flex-wrap: wrap;
     justify-content: center;
 
-    h3 {
+    h2 {
+        width: 100%;
+        margin-bottom: 2.5rem;
+        text-align: right;
+
+        img {
+            height: 5rem;
+            width: 5rem;
+        }
+    }
+
+    h2,
+    &__description {
+        margin-right: 10rem;
+    }
+
+    &__description {
+        width: 55%;
+        margin-left: auto;
+        text-align: right;
+
+        span {
+            font-style: italic;
+        }
+    }
+
+    &__title {
         margin: 1rem 0rem;
         font-size: 4rem;
         font-weight: 100;
@@ -19,13 +45,13 @@
     }
 
     p {
+        text-align: center;
+        margin-bottom: 2rem;
 
         a,
         a:active,
         a:link,
         a:visited {
-            color: inherit;
-            text-decoration: none;
             font-size: 1.5rem;
             border-bottom: 2px solid transparent;
 

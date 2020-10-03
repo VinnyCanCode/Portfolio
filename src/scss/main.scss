@@ -7,12 +7,14 @@
 
 // BASE SCSS FILES
 @import 'base/base';
+@import 'base/typography';
 
 // COMPONENTS SCSS FILES
 @import 'components/logo';
 
 // LAYOUT SCSS FILES
 @import 'layout/about';
+@import 'layout/connect';
 @import 'layout/footer';
 @import 'layout/header';
 @import 'layout/projects';

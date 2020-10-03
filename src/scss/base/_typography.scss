@@ -1,7 +1,14 @@
 /**
  * Basic typography style for copy text
  */
-body {
-  color: $text-color;
-  // font: normal 125% / 1.4 $text-font-stack;
+
+
+.section__title {
+  font-size: 4rem;
+}
+
+.section__description {
+  font-size: 1.7rem;
+  line-height: 2.9rem;
+  font-weight: 100;
 }

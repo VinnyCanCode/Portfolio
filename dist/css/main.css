@@ -20,9 +20,26 @@ body {
   padding: 10rem;
   font-family: "Maharlika-Regular", sans-serif;
   color: #000807; }
+  body a,
+  body a:active,
+  body a:link,
+  body a:visited {
+    color: inherit;
+    text-decoration: none; }
 
 ul {
   list-style: none; }
+
+/**
+ * Basic typography style for copy text
+ */
+.section__title {
+  font-size: 4rem; }
+
+.section__description {
+  font-size: 1.7rem;
+  line-height: 2.9rem;
+  font-weight: 100; }
 
 .logo {
   margin-bottom: 10rem; }
@@ -42,10 +59,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    flex-wrap: wrap;
-    font-size: 1.7rem;
-    line-height: 2.9rem;
-    font-weight: 100; }
+    flex-wrap: wrap; }
     .about__section p {
       display: inline-block;
       float: right;
@@ -137,26 +151,42 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; }
-  .projects h3 {
+  .projects h2 {
+    width: 100%;
+    margin-bottom: 2.5rem;
+    text-align: right; }
+    .projects h2 img {
+      height: 5rem;
+      width: 5rem; }
+  .projects h2, .projects__description {
+    margin-right: 10rem; }
+  .projects__description {
+    width: 55%;
+    margin-left: auto;
+    text-align: right; }
+    .projects__description span {
+      font-style: italic; }
+  .projects__title {
     margin: 1rem 0rem;
     font-size: 4rem;
     font-weight: 100; }
-    .projects h3 span {
+    .projects__title span {
       font-size: 2.5rem;
       margin: 0 .5rem; }
-  .projects p a,
-  .projects p a:active,
-  .projects p a:link,
-  .projects p a:visited {
-    color: inherit;
-    text-decoration: none;
-    font-size: 1.5rem;
-    border-bottom: 2px solid transparent; }
-    .projects p a:hover,
-    .projects p a:active:hover,
-    .projects p a:link:hover,
-    .projects p a:visited:hover {
-      border-color: #df4e3b; }
+  .projects p {
+    text-align: center;
+    margin-bottom: 2rem; }
+    .projects p a,
+    .projects p a:active,
+    .projects p a:link,
+    .projects p a:visited {
+      font-size: 1.5rem;
+      border-bottom: 2px solid transparent; }
+      .projects p a:hover,
+      .projects p a:active:hover,
+      .projects p a:link:hover,
+      .projects p a:visited:hover {
+        border-color: #df4e3b; }
   .projects__1, .projects__2, .projects__3 {
     height: 70vh;
     width: 40vw;
@@ -173,72 +203,78 @@ header {
     display: flex;
     justify-content: space-evenly; }
 
-.stack h2 {
-  font-size: 4rem; }
-
-.stack h3 {
-  font-size: 1.7rem;
-  font-weight: 100;
-  line-height: 2.8rem;
-  width: 55%; }
-
-.stack h2,
-.stack h3 {
-  margin-bottom: 5rem; }
-
-.stack__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  list-style: square; }
-
-.stack__icon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 2.5rem 0rem;
-  flex: 25%;
-  cursor: pointer; }
-  .stack__icon:hover p {
-    border-bottom-color: #df4e3b; }
-    .stack__icon:hover p:before {
-      opacity: 0; }
-  .stack__icon p {
-    font-size: 1.7rem;
-    font-weight: 400;
-    font-style: italic;
-    margin-top: 1rem;
-    position: relative;
-    border-bottom: 2px solid transparent;
-    transition: .2s all ease-in-out; }
-    .stack__icon p:hover {
+.stack {
+  margin-bottom: 10rem; }
+  .stack h2 img {
+    height: 10rem;
+    width: 10rem; }
+  .stack h3 {
+    width: 55%; }
+    .stack h3 a,
+    .stack h3 a:active,
+    .stack h3 a:link,
+    .stack h3 a:visited {
+      font-weight: 900; }
+      .stack h3 a:hover,
+      .stack h3 a:active:hover,
+      .stack h3 a:link:hover,
+      .stack h3 a:visited:hover {
+        color: #df4e3b; }
+  .stack h2,
+  .stack h3 {
+    margin-bottom: 5rem; }
+  .stack__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style: square; }
+  .stack__icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2.5rem 0rem;
+    flex: 25%;
+    cursor: pointer; }
+    .stack__icon:hover p {
       border-bottom-color: #df4e3b; }
-    .stack__icon p:before {
-      position: absolute;
-      content: ' ';
-      left: -1.5rem;
-      top: .5rem;
-      background-image: url("../imgs/dot.svg");
-      background-size: 1rem;
-      height: 1rem;
-      width: 1rem; }
-  .stack__icon img {
-    height: 5rem;
-    width: 5rem;
-    cursor: pointer;
-    transition: .2s all ease-in-out; }
-    .stack__icon img:hover {
-      transform: scale(1.2); }
-  .stack__icon--node img {
-    transform: scale(1.5); }
-    .stack__icon--node img:hover {
-      transform: scale(1.7); }
-  .stack__icon--mongodb img {
-    transform: scale(2.3); }
-    .stack__icon--mongodb img:hover {
-      transform: scale(2.5); }
-  .stack__icon--git img {
-    justify-content: center;
-    transform: scale(1.3); }
-    .stack__icon--git img:hover {
+      .stack__icon:hover p:before {
+        opacity: 0; }
+    .stack__icon p {
+      font-size: 1.7rem;
+      font-weight: 400;
+      font-style: italic;
+      margin-top: 1rem;
+      position: relative;
+      border-bottom: 2px solid transparent;
+      transition: .2s all ease-in-out; }
+      .stack__icon p:hover {
+        border-bottom-color: #df4e3b; }
+      .stack__icon p:before {
+        position: absolute;
+        content: ' ';
+        left: -1.5rem;
+        top: .5rem;
+        background-image: url("../imgs/dot.svg");
+        background-size: 1rem;
+        height: 1rem;
+        width: 1rem; }
+    .stack__icon img {
+      height: 5rem;
+      width: 5rem;
+      cursor: pointer;
+      transition: .2s all ease-in-out; }
+      .stack__icon img:hover {
+        transform: scale(1.2); }
+    .stack__icon--node img {
       transform: scale(1.5); }
+      .stack__icon--node img:hover {
+        transform: scale(1.7); }
+    .stack__icon--mongodb img {
+      transform: scale(2.3); }
+      .stack__icon--mongodb img:hover {
+        transform: scale(2.5); }
+    .stack__icon--git img {
+      justify-content: center;
+      transform: scale(1.3); }
+      .stack__icon--git img:hover {
+        transform: scale(1.5); }

@@ -3,16 +3,30 @@
 // -----------------------------------------------------------------------------
 
 .stack {
+    margin-bottom: 10rem;
 
     h2 {
-        font-size: 4rem;
+
+        img {
+            height: 10rem;
+            width: 10rem;
+        }
     }
 
     h3 {
-        font-size: 1.7rem;
-        font-weight: 100;
-        line-height: 2.8rem;
+
         width: 55%;
+
+        a,
+        a:active,
+        a:link,
+        a:visited {
+            font-weight: 900;
+
+            &:hover {
+                color: $avatar-red;
+            }
+        }
     }
 
     h2,

@@ -21,6 +21,15 @@ body {
     padding: 10rem;
     font-family: $primary-font;
     color: #000807;
+
+
+    a,
+    a:active,
+    a:link,
+    a:visited {
+        color: inherit;
+        text-decoration: none;
+    }
 }
 
 ul {
