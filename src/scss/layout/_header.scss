@@ -29,22 +29,7 @@ header {
     }
 
     &__item {
-        font-size: 1.6rem;
-        cursor: pointer;
-        color: gray;
-        transition: .2s color ease-in-out;
-        transition: .2s border-bottom-color ease-in-out;
-
-        border-bottom: 2px solid transparent;
-
-        &:not(:last-of-type) {
-            margin-right: 5rem;
-        }
-
-        &:hover {
-            color: $color-black;
-            border-bottom-color: $avatar-red;
-        }
+        @include linkStyle;
     }
 }
 
