@@ -2,4 +2,15 @@
 // This file contains all styles related to the connect of the site/application.
 // -----------------------------------------------------------------------------
 
-.connect {}
+.connect {
+    display: flex;
+
+
+    p {
+        width: 50%;
+    }
+
+    &__secondHalf {
+        align-self: center;
+    }
+}

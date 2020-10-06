@@ -77,6 +77,13 @@ ul {
     border: 2px solid transparent;
     border-radius: 50%; }
 
+.connect {
+  display: flex; }
+  .connect p {
+    width: 50%; }
+  .connect__secondHalf {
+    align-self: center; }
+
 .footer {
   display: flex;
   justify-content: space-between;
@@ -181,6 +188,7 @@ header {
     .projects p a:link,
     .projects p a:visited {
       font-size: 1.5rem;
+      font-weight: 600;
       border-bottom: 2px solid transparent; }
       .projects p a:hover,
       .projects p a:active:hover,
