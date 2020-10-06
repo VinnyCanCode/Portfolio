@@ -4,16 +4,22 @@
 
 
 .button {
-    padding: 1.5rem;
+    // padding: 1.5rem;
+    padding: 1rem 8rem;
     color: white;
     background-color: #0094C6;
     border: 2px solid transparent;
-    border-radius: 25px;
+    border-radius: 30px;
     font-weight: 900;
     outline: none;
     cursor: pointer;
     transition: .2s all ease-in-out;
     box-shadow: $box-shadow;
+
+    img {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
 
     &:hover {
         transform: translateY(-3px);
