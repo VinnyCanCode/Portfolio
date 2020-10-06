@@ -238,7 +238,7 @@ header {
     .projects p a:active,
     .projects p a:link,
     .projects p a:visited {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
       font-weight: 600;
       border-bottom: 2px solid transparent; }
       .projects p a:hover,
@@ -256,7 +256,11 @@ header {
     .projects__1 img, .projects__2 img, .projects__3 img {
       object-fit: contain;
       display: block;
-      width: 100%; }
+      width: 100%;
+      cursor: pointer;
+      transition: .2s all ease-in-out; }
+      .projects__1 img:hover, .projects__2 img:hover, .projects__3 img:hover {
+        transform: scale(1.05); }
   .projects__links {
     width: 50%;
     display: flex;

@@ -1,5 +1,4 @@
 import { gsap } from 'gsap';
-import Glide from '@glidejs/glide';
 import { elements } from './base';
 import { CSSRulePlugin } from 'gsap/CSSRulePlugin';
 

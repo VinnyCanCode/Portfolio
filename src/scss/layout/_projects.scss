@@ -52,7 +52,7 @@
         a:active,
         a:link,
         a:visited {
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             font-weight: 600;
             border-bottom: 2px solid transparent;
 
@@ -81,6 +81,12 @@
             object-fit: contain;
             display: block;
             width: 100%;
+            cursor: pointer;
+            transition: .2s all ease-in-out;
+
+            &:hover {
+                transform: scale(1.05);
+            }
         }
     }
 
