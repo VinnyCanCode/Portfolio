@@ -17,6 +17,7 @@ header {
         filter: opacity(.7);
         font-size: 20rem;
         z-index: -1;
+        animation: fadeIn 1.5s ease-in;
     }
 }
 
@@ -29,6 +30,7 @@ header {
     }
 
     &__item {
+        width: auto;
         @include linkStyle;
     }
 }
