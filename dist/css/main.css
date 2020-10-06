@@ -105,10 +105,11 @@ ul {
     border-radius: 50%; }
 
 .connect {
-  display: flex; }
+  display: flex;
+  justify-content: space-between; }
   .connect::before {
     position: absolute;
-    right: 35%;
+    right: 30%;
     content: ' ';
     background-image: url("../imgs/undraw_feeling_proud_qne1.svg");
     background-size: 25rem 25rem;
@@ -119,7 +120,7 @@ ul {
     font-size: 20rem;
     z-index: -1; }
   .connect p {
-    width: 50%; }
+    width: 55%; }
   .connect__secondHalf {
     align-self: center; }
 

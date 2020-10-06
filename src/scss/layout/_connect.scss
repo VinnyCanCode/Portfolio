@@ -4,10 +4,12 @@
 
 .connect {
     display: flex;
+    justify-content: space-between;
+    // width: %;
 
     &::before {
         position: absolute;
-        right: 35%;
+        right: 30%;
         content: ' ';
         background-image: url('../imgs/undraw_feeling_proud_qne1.svg');
         background-size: 25rem 25rem;
@@ -20,7 +22,7 @@
     }
 
     p {
-        width: 50%;
+        width: 55%;
     }
 
     &__secondHalf {
