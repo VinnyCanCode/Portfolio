@@ -1,3 +1,27 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+
+
+.button {
+    padding: 1.5rem;
+    color: white;
+    background-color: #0094C6;
+    border: 2px solid transparent;
+    border-radius: 25px;
+    font-weight: 900;
+    outline: none;
+    cursor: pointer;
+    transition: .2s all ease-in-out;
+    box-shadow: $box-shadow;
+
+    &:hover {
+        transform: translateY(-3px);
+        background-color: $color-slate-blue;
+    }
+
+    &:active {
+        transform: translateY(-1px);
+        box-shadow: $box-shadow-1;
+    }
+}
