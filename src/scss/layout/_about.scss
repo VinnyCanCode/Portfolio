@@ -22,20 +22,47 @@
         justify-content: space-around;
         flex-wrap: wrap;
 
+
+        @media only screen and (max-width: $bp-xl) {
+            justify-content: space-evenly;
+        }
+
         p {
             display: inline-block;
             float: right;
             margin-left: 2rem;
             width: 35%;
 
+            @media only screen and (max-width: $bp-xl) {
+                order: 2;
+                margin-left: 0rem;
+                width: 100%;
+
+                &:not(:last-child) {
+                    margin-bottom: 3rem;
+                }
+            }
+
+
             &:first-child {
                 float: left;
+
+                @media only screen and (max-width: $bp-xl) {
+                    float: clear;
+                }
             }
 
             &:last-of-type {
                 width: 50%;
                 text-align: center;
                 margin-top: 3rem;
+
+
+                @media only screen and (max-width: $bp-xl) {
+                    text-align: left;
+                    width: 100%;
+                    margin-top: 0rem;
+                }
             }
 
         }
@@ -43,6 +70,17 @@
 
     &__picture {
         // display: flex;
+
+        @media only screen and (max-width: $bp-xl) {
+            width: 100%;
+            justify-self: center;
+            display: flex;
+            justify-content: center;
+
+            order: 1;
+
+            margin-bottom: 3rem;
+        }
 
         img {
             // transform: scale(.4);

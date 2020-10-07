@@ -21,11 +21,17 @@ html {
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-size: 62.5%; }
+  @media only screen and (max-width: 73rem) {
+    html {
+      font-size: 56.25%; } }
 
 body {
   padding: 10rem;
   font-family: "Maharlika-Regular", sans-serif;
   color: #000807; }
+  @media only screen and (max-width: 80.31rem) {
+    body {
+      padding: 5rem; } }
   body a,
   body a:active,
   body a:link,
@@ -87,17 +93,43 @@ ul {
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap; }
+    @media only screen and (max-width: 73rem) {
+      .about__section {
+        justify-content: space-evenly; } }
     .about__section p {
       display: inline-block;
       float: right;
       margin-left: 2rem;
       width: 35%; }
+      @media only screen and (max-width: 73rem) {
+        .about__section p {
+          order: 2;
+          margin-left: 0rem;
+          width: 100%; }
+          .about__section p:not(:last-child) {
+            margin-bottom: 3rem; } }
       .about__section p:first-child {
         float: left; }
+        @media only screen and (max-width: 73rem) {
+          .about__section p:first-child {
+            float: clear; } }
       .about__section p:last-of-type {
         width: 50%;
         text-align: center;
         margin-top: 3rem; }
+        @media only screen and (max-width: 73rem) {
+          .about__section p:last-of-type {
+            text-align: left;
+            width: 100%;
+            margin-top: 0rem; } }
+  @media only screen and (max-width: 73rem) {
+    .about__picture {
+      width: 100%;
+      justify-self: center;
+      display: flex;
+      justify-content: center;
+      order: 1;
+      margin-bottom: 3rem; } }
   .about__picture img {
     height: 32rem;
     width: 28rem;

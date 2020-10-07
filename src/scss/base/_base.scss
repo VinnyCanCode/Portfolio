@@ -14,6 +14,11 @@ html {
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-size: 62.5%; // 10px / 16px = 62.5%
+
+
+    @media only screen and (max-width: $bp-xl) {
+        font-size: 56.25%;
+    }
 }
 
 
@@ -21,6 +26,11 @@ body {
     padding: 10rem;
     font-family: $primary-font;
     color: #000807;
+
+
+    @media only screen and (max-width: $bp-xxl) {
+        padding: 5rem;
+    }
 
 
     a,
