@@ -5,7 +5,11 @@
 .connect {
     display: flex;
     justify-content: space-between;
-    // width: %;
+
+
+    @media only screen and (max-width: $bp-large-2) {
+        flex-direction: column;
+    }
 
     &::before {
         position: absolute;
@@ -19,6 +23,10 @@
         filter: opacity(.7);
         font-size: 20rem;
         z-index: -1;
+
+        @media only screen and (max-width: $bp-large-2) {
+            right: 0;
+        }
     }
 
     p {
@@ -27,5 +35,9 @@
 
     &__secondHalf {
         align-self: center;
+
+        @media only screen and (max-width: $bp-large-2) {
+            margin-top: 5rem;
+        }
     }
 }
