@@ -16,6 +16,10 @@
             text-align: left;
         }
 
+        @media only screen and (max-width: $bp-large-2) and (orientation: landscape) {
+            text-align: right;
+        }
+
         img {
             height: 5rem;
             width: 5rem;
@@ -29,6 +33,11 @@
         @media only screen and (max-width: $bp-large-2) {
             margin-right: 0rem;
         }
+
+        @media only screen and (max-width: $bp-large-2) and (orientation: landscape) {
+            margin-right: 5rem;
+        }
+
     }
 
     &__description {
@@ -47,7 +56,14 @@
             margin-right: 13rem;
         }
 
-        @media only screen and (max-width: $bp-large-2) {
+        @media only screen and (max-width: $bp-large-2) and (orientation: landscape) {
+            width: 65%;
+            margin-right: 5rem;
+            text-align: right;
+            margin-bottom: 2rem;
+        }
+
+        @media only screen and (max-width: $bp-phone-1) {
             margin-right: 0rem;
         }
     }
@@ -102,6 +118,11 @@
 
         @media only screen and (max-width: $bp-phone-1) {
             height: 55vh;
+        }
+
+        @media only screen and (max-width: $bp-large-2) and (orientation: landscape) {
+            height: 110vh;
+            width: 40%;
         }
 
         img {

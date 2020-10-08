@@ -34,6 +34,10 @@
             width: 15rem;
             right: 10%;
         }
+
+        @media only screen and (max-width: $bp-large-2) and (orientation: landscape) {
+            right: 5%;
+        }
     }
 
     p {
