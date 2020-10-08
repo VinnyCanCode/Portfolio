@@ -12,6 +12,10 @@
         margin-bottom: 2.5rem;
         text-align: right;
 
+        @media only screen and (max-width: $bp-large-2) {
+            text-align: left;
+        }
+
         img {
             height: 5rem;
             width: 5rem;
@@ -21,6 +25,10 @@
     h2,
     &__description {
         margin-right: 10rem;
+
+        @media only screen and (max-width: $bp-large-2) {
+            margin-right: 0rem;
+        }
     }
 
     &__description {
@@ -30,6 +38,13 @@
 
         span {
             font-style: italic;
+        }
+
+        @media only screen and (max-width: $bp-large-2) {
+            text-align: left;
+            width: 100%;
+            margin-left: none;
+            margin-right: 13rem;
         }
     }
 
@@ -76,6 +91,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        @media only screen and (max-width: $bp-large-2) {
+            width: 100%;
+        }
 
         img {
             object-fit: contain;

@@ -88,6 +88,9 @@ ul {
     margin-bottom: 5rem; }
     .about__title span {
       color: #df4e3b; }
+    @media only screen and (max-width: 52.19rem) {
+      .about__title {
+        padding-left: 0; } }
   .about__section {
     display: flex;
     align-items: center;
@@ -193,6 +196,9 @@ header {
     font-size: 20rem;
     z-index: -1;
     animation: fadeIn 1.5s ease-in; }
+    @media only screen and (max-width: 52.19rem) {
+      header::before {
+        background-image: none; } }
 
 .pageLinks {
   margin-bottom: 5rem; }
@@ -245,17 +251,29 @@ header {
     width: 100%;
     margin-bottom: 2.5rem;
     text-align: right; }
+    @media only screen and (max-width: 52.19rem) {
+      .projects h2 {
+        text-align: left; } }
     .projects h2 img {
       height: 5rem;
       width: 5rem; }
   .projects h2, .projects__description {
     margin-right: 10rem; }
+    @media only screen and (max-width: 52.19rem) {
+      .projects h2, .projects__description {
+        margin-right: 0rem; } }
   .projects__description {
     width: 55%;
     margin-left: auto;
     text-align: right; }
     .projects__description span {
       font-style: italic; }
+    @media only screen and (max-width: 52.19rem) {
+      .projects__description {
+        text-align: left;
+        width: 100%;
+        margin-left: none;
+        margin-right: 13rem; } }
   .projects__title {
     margin: 1rem 0rem;
     font-size: 4rem;
@@ -285,6 +303,9 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+    @media only screen and (max-width: 52.19rem) {
+      .projects__1, .projects__2, .projects__3 {
+        width: 100%; } }
     .projects__1 img, .projects__2 img, .projects__3 img {
       object-fit: contain;
       display: block;
@@ -305,6 +326,9 @@ header {
     width: 10rem; }
   .stack h3 {
     width: 55%; }
+    @media only screen and (max-width: 52.19rem) {
+      .stack h3 {
+        width: 75%; } }
     .stack h3 a,
     .stack h3 a:active,
     .stack h3 a:link,
