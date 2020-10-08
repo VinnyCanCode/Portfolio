@@ -20,10 +20,10 @@
       <!-- Page Links -->
       <div class="pageLinks">
         <ul class="pageLinks__list">
-          <li class="pageLinks__item">About Me</li>
-          <li class="pageLinks__item">Skills</li>
-          <li class="pageLinks__item">Projects</li>
-          <li class="pageLinks__item">Contact</li>
+          <li class="pageLinks__item"><a href="#about">About Me</a></li>
+          <li class="pageLinks__item"><a href="#skills">Skills</a></li>
+          <li class="pageLinks__item"><a href="#projects">Projects</a></li>
+          <li class="pageLinks__item"><a href="#connect">Contact</a></li>
         </ul>
       </div>
 
@@ -31,9 +31,15 @@
       <div class="socials">
         <ul class="socials__list">
           <li class="socials__item">
-            <img src="./imgs/github.svg" alt="github icon" />
-            <img src="./imgs/email.svg" alt="email icon" />
-            <img src="./imgs/twitter.svg" alt="twitter icon" />
+            <a href="https://github.com/VinnyCanCode" target="_blank"
+              ><img src="./imgs/github.svg" alt="github icon"
+            /></a>
+            <a href="mailto: vincenyamu@gmail.com"
+              ><img src="./imgs/email.svg" alt="email icon"
+            /></a>
+            <a href="https://twitter.com/VinnyCanCode" target="_blank"
+              ><img src="./imgs/twitter.svg" alt="twitter icon"
+            /></a>
           </li>
         </ul>
       </div>
@@ -42,7 +48,7 @@
     <!-- Main / Introduction -->
     <section class="about">
       <div class="about__title">
-        <h2>Hi, I'm Vincent.</h2>
+        <h2 id="about">Hi, I'm Vincent.</h2>
         <h2>Front End <span>Developer</span>.</h2>
       </div>
 
@@ -73,7 +79,7 @@
       </div>
     </section>
 
-    <section class="stack">
+    <section class="stack" id="skills">
       <h2 class="section__title">
         My Skills
         <img src="./imgs/skill.svg" alt="skills icon" />
@@ -201,7 +207,7 @@
       </div>
     </section>
 
-    <section class="connect">
+    <section class="connect" id="connect">
       <div class="connect__firstHalf">
         <h1 class="section__title">Let's Connect</h1>
         <br /><br />
@@ -212,7 +218,7 @@
       </div>
       <div class="connect__secondHalf">
         <button class="button">
-          <img src="./imgs/email-1.svg" alt="email button icon " />
+          <a href="mailto: vincenyamu@gmail.com">Say Hello</a>
         </button>
       </div>
     </section>
@@ -225,9 +231,14 @@
 
       <div class="footer__social">
         <ul>
-          <li>github</li>
-          <li>email</li>
-          <li>twitter</li>
+          <li>
+            <a href="https://github.com/VinnyCanCode" target="_blank">github</a>
+          </li>
+          <li>
+            <a href="https://twitter.com/VinnyCanCode" target="_blank"
+              >twitter</a
+            >
+          </li>
         </ul>
       </div>
     </footer>

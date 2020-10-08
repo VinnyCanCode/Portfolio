@@ -270,11 +270,11 @@ header {
     transition: .2s all ease-in-out; }
     .socials__item img svg {
       border: red 1px solid; }
-    .socials__item img:not(:last-of-type) {
-      margin-right: 3rem; }
     .socials__item img:hover {
       filter: opacity(1);
       transform: rotate(-10deg); }
+  .socials__item a:not(:last-of-type) {
+    margin-right: 3rem; }
 
 .projects {
   display: flex;

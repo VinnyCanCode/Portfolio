@@ -67,17 +67,18 @@ header {
             transition: .2s all ease-in-out;
 
             svg {
-                // fill: gray;
                 border: $borderTest;
-            }
-
-            &:not(:last-of-type) {
-                margin-right: 3rem;
             }
 
             &:hover {
                 filter: opacity(1);
                 transform: rotate(-10deg);
+            }
+        }
+
+        a {
+            &:not(:last-of-type) {
+                margin-right: 3rem;
             }
         }
 
