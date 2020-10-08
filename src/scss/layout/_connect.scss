@@ -27,6 +27,13 @@
         @media only screen and (max-width: $bp-large-2) {
             right: 0;
         }
+
+        @media only screen and (max-width: $bp-phone-1) {
+            background-size: 15rem 15rem;
+            height: 15rem;
+            width: 15rem;
+            right: 10%;
+        }
     }
 
     p {

@@ -24,6 +24,12 @@ html {
   @media only screen and (max-width: 73rem) {
     html {
       font-size: 56.25%; } }
+  @media only screen and (max-width: 26.56rem) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 23.5rem) {
+    html {
+      font-size: 43.75%; } }
 
 body {
   padding: 10rem;
@@ -32,6 +38,12 @@ body {
   @media only screen and (max-width: 80.31rem) {
     body {
       padding: 5rem; } }
+  @media only screen and (max-width: 26.56rem) {
+    body {
+      padding: 3.5rem; } }
+  @media only screen and (max-width: 23.5rem) {
+    body {
+      padding: 2.5rem; } }
   body a,
   body a:active,
   body a:link,
@@ -160,6 +172,12 @@ ul {
     @media only screen and (max-width: 52.19rem) {
       .connect::before {
         right: 0; } }
+    @media only screen and (max-width: 26.56rem) {
+      .connect::before {
+        background-size: 15rem 15rem;
+        height: 15rem;
+        width: 15rem;
+        right: 10%; } }
   .connect p {
     width: 55%; }
   .connect__secondHalf {
@@ -283,6 +301,9 @@ header {
         width: 100%;
         margin-left: none;
         margin-right: 13rem; } }
+    @media only screen and (max-width: 52.19rem) {
+      .projects__description {
+        margin-right: 0rem; } }
   .projects__title {
     margin: 1rem 0rem;
     font-size: 4rem;
@@ -315,6 +336,9 @@ header {
     @media only screen and (max-width: 52.19rem) {
       .projects__1, .projects__2, .projects__3 {
         width: 100%; } }
+    @media only screen and (max-width: 26.56rem) {
+      .projects__1, .projects__2, .projects__3 {
+        height: 55vh; } }
     .projects__1 img, .projects__2 img, .projects__3 img {
       object-fit: contain;
       display: block;
@@ -338,6 +362,9 @@ header {
     @media only screen and (max-width: 52.19rem) {
       .stack h3 {
         width: 75%; } }
+    @media only screen and (max-width: 26.56rem) {
+      .stack h3 {
+        width: 100%; } }
     .stack h3 a,
     .stack h3 a:active,
     .stack h3 a:link,
@@ -362,7 +389,8 @@ header {
     align-items: center;
     margin: 2.5rem 0rem;
     flex: 25%;
-    cursor: pointer; }
+    cursor: pointer;
+    text-align: center; }
     .stack__icon:hover p {
       border-bottom-color: #df4e3b; }
       .stack__icon:hover p:before {
@@ -393,6 +421,9 @@ header {
       transition: .2s all ease-in-out; }
       .stack__icon img:hover {
         transform: scale(1.2); }
+    @media only screen and (max-width: 26.56rem) {
+      .stack__icon--js p:before {
+        left: 0rem; } }
     .stack__icon--node img {
       transform: scale(1.5); }
       .stack__icon--node img:hover {

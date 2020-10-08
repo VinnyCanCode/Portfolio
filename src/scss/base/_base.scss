@@ -17,7 +17,15 @@ html {
 
 
     @media only screen and (max-width: $bp-xl) {
-        font-size: 56.25%;
+        font-size: 56.25%; // 9px / 16px = 56.25%
+    }
+
+    @media only screen and (max-width: $bp-phone-1) {
+        font-size: 50%; // 8px / 16px = 50%
+    }
+
+    @media only screen and (max-width: $bp-phone-2) {
+        font-size: 43.75%; // 7px / 16px = 43.75%
     }
 }
 
@@ -30,6 +38,14 @@ body {
 
     @media only screen and (max-width: $bp-xxl) {
         padding: 5rem;
+    }
+
+    @media only screen and (max-width: $bp-phone-1) {
+        padding: 3.5rem;
+    }
+
+    @media only screen and (max-width: $bp-phone-2) {
+        padding: 2.5rem;
     }
 
 

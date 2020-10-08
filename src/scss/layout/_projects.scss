@@ -46,6 +46,10 @@
             margin-left: none;
             margin-right: 13rem;
         }
+
+        @media only screen and (max-width: $bp-large-2) {
+            margin-right: 0rem;
+        }
     }
 
     &__title {
@@ -94,6 +98,10 @@
 
         @media only screen and (max-width: $bp-large-2) {
             width: 100%;
+        }
+
+        @media only screen and (max-width: $bp-phone-1) {
+            height: 55vh;
         }
 
         img {

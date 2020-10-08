@@ -21,6 +21,10 @@
             width: 75%;
         }
 
+        @media only screen and (max-width: $bp-phone-1) {
+            width: 100%;
+        }
+
         a,
         a:active,
         a:link,
@@ -52,13 +56,10 @@
         margin: 2.5rem 0rem;
         flex: 25%;
         cursor: pointer;
+        text-align: center;
+
 
         &:hover {
-
-            // img {
-
-            //     transform: scale(1.2);
-            // }
 
             p {
                 border-bottom-color: $avatar-red;
@@ -104,6 +105,17 @@
 
             &:hover {
                 transform: scale(1.2);
+            }
+        }
+
+        &--js {
+            p {
+                &:before {
+
+                    @media only screen and (max-width: $bp-phone-1) {
+                        left: 0rem;
+                    }
+                }
             }
         }
 
