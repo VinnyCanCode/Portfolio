@@ -8,6 +8,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    cursor: default;
 
     h2 {
 
@@ -17,7 +18,7 @@
         }
     }
 
-    h3 {
+    &__description {
 
         width: 55%;
 
@@ -34,15 +35,17 @@
         a:link,
         a:visited {
             font-weight: 900;
+            color: $avatar-red;
 
             &:hover {
-                color: $avatar-red;
+                // color: $avatar-red;
+                text-decoration: underline;
             }
         }
     }
 
     h2,
-    h3 {
+    &__description {
         margin-bottom: 5rem;
         align-self: flex-start;
     }
@@ -59,14 +62,12 @@
         align-items: center;
         margin: 2.5rem 0rem;
         flex: 20%;
-        cursor: pointer;
         text-align: center;
 
 
         &:hover {
 
             p {
-                border-bottom-color: $avatar-red;
 
                 &:before {
                     opacity: 0;
@@ -80,26 +81,14 @@
             font-style: italic;
             margin-top: 1rem;
             position: relative;
-            border-bottom: 2px solid transparent;
-
             transition: .2s all ease-in-out;
-
-            &:hover {
-                border-bottom-color: $avatar-red;
-            }
-
         }
 
         img {
             height: 7rem;
             width: 7rem;
-            cursor: pointer;
 
             transition: .2s all ease-in-out;
-
-            &:hover {
-                transform: scale(1.2);
-            }
         }
 
         &--js {
@@ -118,7 +107,7 @@
                 transform: scale(1.5);
 
                 &:hover {
-                    transform: scale(1.7);
+                    // transform: scale(1.7);
                 }
             }
         }
@@ -128,7 +117,7 @@
                 transform: scale(2.3);
 
                 &:hover {
-                    transform: scale(2.5);
+                    // transform: scale(2.5);
                 }
             }
         }
@@ -139,7 +128,7 @@
                 transform: scale(1.3);
 
                 &:hover {
-                    transform: scale(1.5);
+                    // transform: scale(1.5);
                 }
             }
         }
