@@ -11,6 +11,9 @@
         width: 100%;
         margin-bottom: 2.5rem;
         text-align: right;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
 
         @media only screen and (max-width: $bp-large-2) {
             text-align: left;

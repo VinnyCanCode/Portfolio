@@ -330,7 +330,10 @@ header {
   .projects h2 {
     width: 100%;
     margin-bottom: 2.5rem;
-    text-align: right; }
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end; }
     @media only screen and (max-width: 52.19rem) {
       .projects h2 {
         text-align: left; } }
@@ -425,9 +428,13 @@ header {
   flex-direction: column;
   align-items: center;
   cursor: default; }
-  .stack h2 img {
-    height: 10rem;
-    width: 10rem; }
+  .stack h2 {
+    display: flex;
+    align-items: flex-end; }
+    .stack h2 img {
+      height: 10rem;
+      width: 10rem;
+      vertical-align: baseline; }
   .stack__description {
     width: 55%; }
     @media only screen and (max-width: 52.19rem) {
@@ -484,3 +491,5 @@ header {
     .stack__icon--git img {
       justify-content: center;
       transform: scale(1.3); }
+    .stack__icon--gsap img {
+      margin-right: 2rem; }
