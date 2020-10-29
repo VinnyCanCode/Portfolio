@@ -67,6 +67,9 @@
         flex: 20%;
         text-align: center;
 
+        @media only screen and (max-width: $bp-large-2) {
+            flex: 30%;
+        }
 
         &:hover {
 

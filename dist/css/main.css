@@ -468,6 +468,9 @@ header {
     margin: 2.5rem 0rem;
     flex: 20%;
     text-align: center; }
+    @media only screen and (max-width: 52.19rem) {
+      .stack__icon {
+        flex: 30%; } }
     .stack__icon:hover p:before {
       opacity: 0; }
     .stack__icon p {
