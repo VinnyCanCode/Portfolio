@@ -40,7 +40,7 @@
 
     }
 
-    p {
+    &__description {
         width: 55%;
     }
 
@@ -49,6 +49,29 @@
 
         @media only screen and (max-width: $bp-large-2) {
             margin-top: 5rem;
+        }
+    }
+
+    &__mailto{
+        padding: 1rem 8rem;
+        color: white;
+        background-color: #0094C6;
+        border: 2px solid transparent;
+        border-radius: 30px;
+        font-weight: 900;
+        outline: none;
+        cursor: pointer;
+        transition: .2s all ease-in-out;
+        box-shadow: $box-shadow;
+
+        &:hover {
+            transform: translateY(-3px);
+            background-color: $color-slate-blue;
+        }
+
+        &:active {
+            transform: translateY(-1px);
+            box-shadow: $box-shadow-1;
         }
     }
 }

@@ -214,13 +214,30 @@ ul {
     @media only screen and (max-width: 52.19rem) and (orientation: landscape) {
       .connect::before {
         right: 5%; } }
-  .connect p {
+  .connect__description {
     width: 55%; }
   .connect__secondHalf {
     align-self: center; }
     @media only screen and (max-width: 52.19rem) {
       .connect__secondHalf {
         margin-top: 5rem; } }
+  .connect__mailto {
+    padding: 1rem 8rem;
+    color: white;
+    background-color: #0094C6;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    font-weight: 900;
+    outline: none;
+    cursor: pointer;
+    transition: .2s all ease-in-out;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.05); }
+    .connect__mailto:hover {
+      transform: translateY(-3px);
+      background-color: #7678ED; }
+    .connect__mailto:active {
+      transform: translateY(-1px);
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1); }
 
 .footer {
   display: flex;
