@@ -120,6 +120,8 @@ ul {
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1); }
 
 .logo {
+  font-size: 1.5rem;
+  font-weight: 700;
   margin-bottom: 10rem; }
   .logo__footer {
     margin-bottom: 0rem; }
@@ -183,6 +185,12 @@ ul {
     width: 28rem;
     border: 2px solid transparent;
     border-radius: 50%; }
+
+.apple-bubble {
+  border-radius: 32px;
+  border: 1px solid transparent;
+  background-color: #F7F7FA;
+  padding: 2rem; }
 
 .connect {
   display: flex;
@@ -323,10 +331,21 @@ header {
   .socials__item a:not(:last-of-type) {
     margin-right: 3rem; }
 
-.loading__svgContainer {
-  width: 600px;
-  border: 2px solid blue;
-  height: auto; }
+.loading {
+  height: 100vh; }
+  .loading__svgContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; }
+  .loading #animated-svg {
+    width: 500px;
+    height: auto; }
+  @media only screen and (min-width: 600px) {
+    .loading #animated-svg {
+      width: 600px;
+      height: auto; } }
 
 .projects {
   display: flex;

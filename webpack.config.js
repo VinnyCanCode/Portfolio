@@ -17,6 +17,10 @@ module.exports = {
       filename: 'index.html',
       template: './src/index.html',
     }),
+    new HtmlWebpackPlugin({
+      filename: 'old-portfolio.html',
+      template: './src/old-portfolio.html',
+    }),
   ],
   module: {
     rules: [
