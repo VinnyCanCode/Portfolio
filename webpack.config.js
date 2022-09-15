@@ -9,6 +9,8 @@ module.exports = {
   },
   devServer: {
     contentBase: './dist',
+    watchContentBase: true,
+    hotOnly: true,
   },
   plugins: [
     new HtmlWebpackPlugin({

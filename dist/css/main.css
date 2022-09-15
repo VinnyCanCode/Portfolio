@@ -325,6 +325,7 @@ header {
 
 .loading__svgContainer {
   width: 600px;
+  border: 2px solid blue;
   height: auto; }
 
 .projects {
