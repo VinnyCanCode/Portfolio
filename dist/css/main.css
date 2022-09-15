@@ -323,9 +323,9 @@ header {
   .socials__item a:not(:last-of-type) {
     margin-right: 3rem; }
 
-.loading__svgContainer svg {
-  width: 500px;
-  height: 500px; }
+.loading__svgContainer {
+  width: 600px;
+  height: auto; }
 
 .projects {
   display: flex;
