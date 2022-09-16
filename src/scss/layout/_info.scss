@@ -1,6 +1,49 @@
 .info {
     grid-area: info;
 
-    font-size: 2rem;
-    font-weight: 300;
+
+    &__title {
+        font-size: 3rem;
+        font-weight: 500;
+        color: $gray-500;
+        margin-bottom: 2rem;
+        padding-bottom: 1.5rem;
+        border-bottom: .5px solid rgba($gray-200, .3);
+
+        span {
+            color: $black;
+
+            &:nth-of-type(2n){
+                font-weight: 500;
+                color: #4274AE;
+            }
+        }
+    }
+
+    p {
+        font-size: 2rem;
+        font-weight: 300;
+        color: $gray-500;
+        margin-bottom: 1.5rem;
+    }
+
+    &__links {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 3rem;
+
+        p:first-of-type {
+            padding-right: 2rem;
+            &:before {
+                content: "*";
+                color: $avatar-red;
+                margin-right: .5rem;
+            }
+        }
+        
+        & > * {
+            font-size: 1rem;
+        }
+    }
 }

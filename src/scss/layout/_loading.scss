@@ -1,29 +1,31 @@
 .loading {
-    height: 100vh;
+    // height: 100vh;
+    padding: 5rem 10rem 2rem;
+    overflow-y: hidden;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
-    font-family: SF Pro Display, sans-serif;
+    font-family: $new-font;
 
     &__main {
-        max-width: 1200px;
+        max-width: 1300px;
         margin: 0 auto;
         display: grid;
         grid-template-columns: 2fr 2fr;
-        grid-template-rows: max-content 1fr 1fr;
+        grid-template-rows: max-content 150px 1fr;
         grid-template-areas: 
         "logo ."
         "info nav"
         "info contact";
         grid-gap: 1.5rem;
 
-        height: 500px;
+        // height: 500px;
     }
 
     .logo {
-        margin-bottom: 1rem;
+        margin-bottom: 0;
     }
 
 
@@ -43,7 +45,7 @@
 
     @media only screen and (min-width: $bp-med) {
         &__main {
-            height: 500px;
+            // height: 500px;
         }    
         #animated-svg {
             width: 600px;
