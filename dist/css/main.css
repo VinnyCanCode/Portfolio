@@ -36,6 +36,8 @@ html {
 
 body {
   padding: 10rem;
+  max-width: 1800px;
+  margin: 0 auto;
   font-family: "Maharlika-Regular", sans-serif;
   color: #000807; }
   @media only screen and (max-width: 80.31rem) {
@@ -247,6 +249,9 @@ ul {
       transform: translateY(-1px);
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1); }
 
+.contact {
+  grid-area: contact; }
+
 .footer {
   display: flex;
   justify-content: space-between;
@@ -331,11 +336,29 @@ header {
   .socials__item a:not(:last-of-type) {
     margin-right: 3rem; }
 
+.info {
+  grid-area: info;
+  font-size: 2rem;
+  font-weight: 300; }
+
 .loading {
-  height: 100vh; }
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: SF Pro Display, sans-serif; }
+  .loading__main {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: max-content 1fr 1fr;
+    grid-template-areas: "logo ." "info nav" "info contact";
+    grid-gap: 1.5rem;
+    height: 500px; }
+  .loading .logo {
+    margin-bottom: 1rem; }
   .loading__svgContainer {
-    width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: flex-end; }
@@ -343,9 +366,14 @@ header {
     width: 500px;
     height: auto; }
   @media only screen and (min-width: 600px) {
+    .loading__main {
+      height: 500px; }
     .loading #animated-svg {
       width: 600px;
       height: auto; } }
+
+.nav {
+  grid-area: nav; }
 
 .projects {
   display: flex;

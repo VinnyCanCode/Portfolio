@@ -2,17 +2,10 @@
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
 
-@font-face {
-    font-family: 'Maharlika-Regular';
-    src: url('./fonts/Maharlika-Regular.ttf') format('ttf'),
-        url('./fonts/Maharlika-Regular.ttf') format('ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-
 // FONT VARIABLES
 $primary-font: 'Maharlika-Regular',
 sans-serif;
+$new-font: 'SF Pro Display','Helvetica Neue','Helvetica','Arial',sans-serif;
 
 
 // COLOR VARIABLES
