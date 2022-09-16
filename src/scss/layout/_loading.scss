@@ -1,27 +1,22 @@
 .loading {
-    // height: 100vh;
-    padding: 5rem 10rem 2rem;
-    overflow-y: hidden;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
+    padding: 5rem 3rem 2rem;
+
     font-family: $new-font;
 
     &__main {
-        max-width: 1300px;
         margin: 0 auto;
         display: grid;
-        grid-template-columns: 2fr 2fr;
-        grid-template-rows: max-content 150px 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
         grid-template-areas: 
-        "logo ."
-        "info nav"
-        "info contact";
+        "logo"
+        "nav"
+        "info";
         grid-gap: 1.5rem;
-
-        // height: 500px;
     }
 
     .logo {
@@ -30,8 +25,6 @@
 
 
     &__svgContainer {
-        // width: 100%;
-        // height: 100%;
         display: flex;
         justify-content: center;
         align-items: flex-end;
@@ -43,10 +36,21 @@
     }
     
 
-    @media only screen and (min-width: $bp-med) {
+    @media only screen and (min-width: $bp-xxl) {
+        padding: 5rem 10rem 2rem;
+
         &__main {
-            // height: 500px;
-        }    
+            max-width: 1300px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 2fr;
+            grid-template-rows: max-content max-content 1fr;
+            grid-template-areas: 
+            "logo ."
+            "info nav"
+            "info contact";
+            grid-gap: 1.5rem;
+        }     
         #animated-svg {
             width: 600px;
             height: auto;

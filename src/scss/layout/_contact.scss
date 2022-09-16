@@ -1,3 +1,8 @@
 .contact {
+    display: none;
     grid-area: contact;
+
+    @media only screen and (min-width: $bp-xxl) {
+        display: block;
+    }
 }
