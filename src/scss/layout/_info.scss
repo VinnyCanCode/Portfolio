@@ -2,7 +2,7 @@
     grid-area: info;
     overflow: scroll;
     scroll-behavior: smooth;
-    max-height: 500px;
+    max-height: 475px;
 
     &__title {
         font-size: 2.5rem;
@@ -45,6 +45,12 @@
         p {
             cursor: pointer;
         }
+        span {
+            display: block;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #3F784C;
+        }
     }
 
     &__links p,
@@ -69,6 +75,8 @@
     }
 
     @media only screen and (min-width: $bp-med) {
+        max-height: 400px;
+
         &__title {
             font-size: 3rem;
         }
@@ -76,5 +84,8 @@
         p {
             font-size: 2rem;
         }
+    }
+    @media only screen and (min-width: 1000px) {
+        max-height: 450px;
     }
 }

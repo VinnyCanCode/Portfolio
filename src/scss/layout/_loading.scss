@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: space-between;
 
-    padding: 5rem 3rem 2rem;
+    padding: 2rem 2rem 0 2rem;
 
     font-family: $new-font;
 
@@ -31,12 +31,19 @@
     }
 
     #animated-svg {
-        width: 500px;
+        width: 300px;
         height: auto;
     }
-    
 
-    @media only screen and (min-width: $bp-xxl) {
+    
+    @media only screen and (min-width: $bp-med) {
+        #animated-svg {
+            width: 525px;
+        }
+    }
+
+
+    @media only screen and (min-width: 1000px) {
         padding: 5rem 10rem 2rem;
 
         &__main {
@@ -53,7 +60,6 @@
         }     
         #animated-svg {
             width: 600px;
-            height: auto;
         }
     }
 }

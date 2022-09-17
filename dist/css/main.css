@@ -359,10 +359,70 @@ ul {
 
 .contact {
   display: none;
-  grid-area: contact; }
-  @media only screen and (min-width: 80.31rem) {
+  grid-area: contact;
+  position: relative;
+  padding: 3rem 2rem; }
+  .contact::after {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    display: block;
+    height: max-content;
+    width: max-content;
+    content: "3";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    border-radius: 50vh;
+    background-color: #df4e3b;
+    font-size: 1.75rem;
+    color: white;
+    padding: 1rem 1.5rem; }
+  .contact__bottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: auto; }
+  .contact__input {
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: #d3d3d3;
+    border: 2px solid #d3d3d3;
+    border-radius: 25px;
+    padding: 1rem 1.5rem;
+    width: 100%;
+    font-size: 1.75rem; }
+    .contact__input::after {
+      position: absolute;
+      width: 25px;
+      height: 100%;
+      content: "";
+      background: url("data:image/svg+xml,%3Csvg fill='%231982FC' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath d='M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM385 215c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-71-71V392c0 13.3-10.7 24-24 24s-24-10.7-24-24V177.9l-71 71c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9L239 103c9.4-9.4 24.6-9.4 33.9 0L385 215z' /%3E%3C/svg%3E") no-repeat;
+      display: inline-block;
+      top: 20%;
+      right: 5px;
+      vertical-align: middle; }
+  .contact__icons {
+    display: flex;
+    align-items: center;
+    grid-gap: 1rem;
+    margin-right: 1.5rem; }
+  .contact__spotify svg, .contact__link,
+  .contact__sendButton svg {
+    height: auto;
+    width: 25px; }
+  .contact__spotify svg {
+    fill: #1DB954; }
+  .contact__link {
+    fill: #706f6f; }
+  .contact__sendButton svg {
+    fill: #1982FC; }
+  @media only screen and (min-width: 1000px) {
     .contact {
-      display: block; } }
+      display: flex;
+      flex-direction: column; } }
 
 .footer {
   display: flex;
@@ -452,7 +512,7 @@ header {
   grid-area: info;
   overflow: scroll;
   scroll-behavior: smooth;
-  max-height: 500px; }
+  max-height: 475px; }
   .info__title {
     font-size: 2.5rem;
     font-weight: 500;
@@ -482,6 +542,11 @@ header {
       font-weight: 900; }
     .info__links p {
       cursor: pointer; }
+    .info__links span {
+      display: block;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #3F784C; }
   .info__links p,
   .info .scroll-effect p {
     font-size: 1.7rem; }
@@ -495,16 +560,21 @@ header {
     .info::-webkit-scrollbar-thumb {
       background: transparent; }
   @media only screen and (min-width: 600px) {
-    .info__title {
-      font-size: 3rem; }
-    .info p {
-      font-size: 2rem; } }
+    .info {
+      max-height: 400px; }
+      .info__title {
+        font-size: 3rem; }
+      .info p {
+        font-size: 2rem; } }
+  @media only screen and (min-width: 1000px) {
+    .info {
+      max-height: 450px; } }
 
 .loading {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 5rem 3rem 2rem;
+  padding: 2rem 2rem 0 2rem;
   font-family: "SF Pro Display", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
   .loading__main {
     margin: 0 auto;
@@ -520,9 +590,12 @@ header {
     justify-content: center;
     align-items: flex-end; }
   .loading #animated-svg {
-    width: 500px;
+    width: 300px;
     height: auto; }
-  @media only screen and (min-width: 80.31rem) {
+  @media only screen and (min-width: 600px) {
+    .loading #animated-svg {
+      width: 525px; } }
+  @media only screen and (min-width: 1000px) {
     .loading {
       padding: 5rem 10rem 2rem; }
       .loading__main {
@@ -534,16 +607,15 @@ header {
         grid-template-areas: "logo ." "info nav" "info contact";
         grid-gap: 1.5rem; }
       .loading #animated-svg {
-        width: 600px;
-        height: auto; } }
+        width: 600px; } }
 
 .nav {
   grid-area: nav;
   display: flex;
   flex-wrap: wrap;
-  padding: 2rem 0 2rem 2rem;
+  padding: 1rem 0 2rem 1rem;
   overflow: hidden;
-  width: max-content; }
+  width: 400px; }
   .nav__container {
     display: flex;
     align-items: center;
@@ -558,8 +630,8 @@ header {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    width: 64px;
-    height: 64px;
+    width: 54px;
+    height: 54px;
     padding: .75rem;
     background-color: white;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.35);
@@ -581,6 +653,10 @@ header {
     .nav__icon.-active {
       box-shadow: inset 0 0 0 15px rgba(66, 116, 174, 0.3);
       border: 2px solid #4274ae; }
+  @media only screen and (min-width: 1000%) {
+    .nav {
+      padding: 2rem 0 2rem 2rem;
+      width: max-content; } }
 
 .projects {
   display: flex;
@@ -776,4 +852,13 @@ header {
       border-bottom: 2px solid #4274ae;
       padding-bottom: .25rem;
       margin-bottom: .5rem;
-      color: #7f7f7f; }
+      color: #7f7f7f;
+      position: relative; }
+      .tool-tip__item.-active::after {
+        content: "";
+        width: 5rem;
+        height: 2px;
+        position: absolute;
+        bottom: -2px;
+        left: -30px;
+        border-bottom: 2px solid #4274ae; }
