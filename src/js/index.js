@@ -1,41 +1,47 @@
 import { gsap } from 'gsap'
 import { elements } from './base'
 import './navController'
+ 
 
+// Inspiration Click Functionality
+// If not on page, skip
 const inspirationTrigger = document.querySelector('.info__inspirationClick')
-const inspirationBlock = document.querySelector('.info__inspiration')
-const inspirationExitButton = document.querySelector('.info__inspiration-close')
 
-// On/Off Click For Inspiration Dropdown Menu
-inspirationTrigger.addEventListener('click', (e) => {
+if (inspirationTrigger) {
 
-    // If -active is already in the classlist
-    // Remove -active class and add -remove class
-    // Remove "-remove" class 1.5s after 
-    if (inspirationBlock.classList.contains('-active')) {
+    const inspirationBlock = document.querySelector('.info__inspiration')
+    const inspirationExitButton = document.querySelector('.info__inspiration-close')
+
+    // On/Off Click For Inspiration Dropdown Menu
+    inspirationTrigger.addEventListener('click', (e) => {
+
+        // If -active is already in the classlist
+        // Remove -active class and add -remove class
+        // Remove "-remove" class 1.5s after
+        if (inspirationBlock.classList.contains('-active')) {
+            inspirationBlock.classList.toggle('-active')
+            inspirationBlock.classList.toggle('-remove')
+            setTimeout(() => {
+                inspirationBlock.classList.toggle('-remove')
+            }, 1500)
+        } else {
+            inspirationBlock.classList.toggle('-active')
+        }
+    })
+
+    // Exit Button For Inspiration dropdwon
+    inspirationExitButton.addEventListener('click', (e) => {
+
+        // If -active is already in the classlist
+        // Remove -active class and add -remove class
+        // Remove "-remove" class 1.5s after
         inspirationBlock.classList.toggle('-active')
         inspirationBlock.classList.toggle('-remove')
         setTimeout(() => {
             inspirationBlock.classList.toggle('-remove')
         }, 1500)
-    } else {
-        inspirationBlock.classList.toggle('-active')
-    }
-})
-
-// Exit Button For Inspiration dropdwon
-inspirationExitButton.addEventListener('click', (e) => {
-
-    // If -active is already in the classlist
-    // Remove -active class and add -remove class
-    // Remove "-remove" class 1.5s after 
-    inspirationBlock.classList.toggle('-active')
-    inspirationBlock.classList.toggle('-remove')
-    setTimeout(() => {
-        inspirationBlock.classList.toggle('-remove')
-    }, 1500)
-    
-})
+    })
+}
 
 // LOGO Animation
 // const logoAnimation = gsap.timeline()
