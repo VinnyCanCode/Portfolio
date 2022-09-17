@@ -647,6 +647,10 @@ header {
       object-fit: cover; }
     .nav__icon.linkedin {
       padding: 1.2rem; }
+    .nav__icon.github.-active {
+      box-shadow: inset 0 0 0 5px rgba(66, 116, 174, 0.3); }
+    .nav__icon.twitter.-active {
+      box-shadow: inset 0 0 0 5px rgba(66, 116, 174, 0.3); }
     .nav__icon img {
       width: 100%;
       overflow: hidden; }
@@ -841,7 +845,7 @@ header {
     display: none;
     font-size: 1.75rem;
     font-weight: 500;
-    letter-spacing: .5rem;
+    letter-spacing: 0.5rem;
     line-height: 1;
     color: #7f7f7f;
     text-transform: uppercase; }
@@ -850,12 +854,12 @@ header {
     .tool-tip__item.-active {
       display: block;
       border-bottom: 2px solid #4274ae;
-      padding-bottom: .25rem;
-      margin-bottom: .5rem;
+      padding-bottom: 0.25rem;
+      margin-bottom: 0.5rem;
       color: #7f7f7f;
       position: relative; }
       .tool-tip__item.-active::after {
-        content: "";
+        content: '';
         width: 5rem;
         height: 2px;
         position: absolute;

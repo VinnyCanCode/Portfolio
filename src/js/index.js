@@ -1,15 +1,16 @@
 import { gsap } from 'gsap'
 import { elements } from './base'
+import './navController'
 
 // LOGO Animation
-const logoAnimation = gsap.timeline()
+// const logoAnimation = gsap.timeline()
 
-logoAnimation.from([elements.logo], {
-    duration: 1,
-    y: 40,
-    opacity: 0,
-    ease: 'power3.out',
-})
+// logoAnimation.from([elements.logo], {
+//     duration: 1,
+//     y: 40,
+//     opacity: 0,
+//     ease: 'power3.out',
+// })
 
 // HEADER ANIMATION
 // const initialAnimation = gsap.timeline()

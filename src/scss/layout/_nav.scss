@@ -58,6 +58,17 @@
             padding: 1.2rem;
         }
 
+        &.github {
+            &.-active {
+                box-shadow: inset 0 0 0 5px rgba(#4274ae, .3);
+            }
+        }
+        &.twitter {
+            &.-active {
+                box-shadow: inset 0 0 0 5px rgba(#4274ae, .3);
+            }
+        }
+
         img {
             width: 100%;
             overflow: hidden;
