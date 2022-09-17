@@ -26,6 +26,8 @@
             margin-bottom: 0.5rem;
             color: $gray-400;
 
+            animation: .65s fadeIn forwards;
+
             position: relative;
 
             &::after {

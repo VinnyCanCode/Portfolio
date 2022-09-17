@@ -36,6 +36,11 @@
     }
 
     
+    @media only screen and (min-width: 450px) {
+        #animated-svg {
+            width: 350px;
+        }   
+    }
     @media only screen and (min-width: $bp-med) {
         #animated-svg {
             width: 525px;
@@ -59,7 +64,7 @@
             grid-gap: 1.5rem;
         }     
         #animated-svg {
-            width: 600px;
+            width: 550px;
         }
     }
 }
