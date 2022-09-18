@@ -1,7 +1,16 @@
 const navIcons = document.querySelectorAll('[data-navController]')
-const tooltips = document.querySelectorAll('[data-tooltip]')
 
+// Check if navIcons are on the page 
 if (navIcons) {
+
+    // Get all tool tips 
+    const tooltips = document.querySelectorAll('[data-tooltip]')
+
+    // Foreach through navIcon 
+    // On mouseenter remove any icon that has '-active'
+    // Add '-active' to the correct icon 
+    // Remove '-active' to all tooltips
+    // Add '-active' to the correct tooltip 
     navIcons.forEach((icon) =>
         icon.addEventListener('mouseenter', (e) => {
             const controller = icon.dataset.navcontroller

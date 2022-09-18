@@ -1,6 +1,7 @@
 import { gsap } from 'gsap'
 import { elements } from './base'
 import './navController'
+import './imessage'
  
 
 // Inspiration Click Functionality
