@@ -2,15 +2,15 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-    padding: 2rem 2rem 0 2rem;
+    
+    padding: 2rem;
 
     font-family: $new-font;
 
     &__main {
         margin: 0 auto;
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 90vw;
         grid-template-rows: auto;
         grid-template-areas: 
         "logo"
@@ -42,6 +42,20 @@
         }   
     }
     @media only screen and (min-width: $bp-med) {
+        padding: 2rem 2rem 0 2rem;
+
+        &__main {
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-template-areas: 
+            "logo"
+            "nav"
+            "info";
+            grid-gap: 1.5rem;
+        }
+
         #animated-svg {
             width: 525px;
         }

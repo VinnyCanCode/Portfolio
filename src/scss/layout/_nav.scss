@@ -5,7 +5,6 @@
     flex-wrap: wrap;
     padding: 1rem 0 2rem 1rem;
     overflow: hidden;
-    width: 400px;
 
 
     &__container {
@@ -27,8 +26,8 @@
         justify-content: center;
         overflow: hidden;
 
-        width: 56px;
-        height: 56px;
+        width: 50px;
+        height: 45px;
         padding: .75rem;
 
         background-color: white;
@@ -87,9 +86,17 @@
 
     }
 
-    @media only screen and (min-width: 1000%) {
-        padding: 2rem 0 2rem 2rem;
-        width: max-content;
+    @media only screen and (min-width: $bp-med) {
+        width: 400px;
+        
+        &__icon {
+            width: 56px;
+            height: 56px;
+        }
+    }
+
+    @media only screen and (min-width: 1000px) {
+        // width: max-content;
     }
 
 }

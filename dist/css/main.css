@@ -605,7 +605,7 @@ header {
   grid-area: info;
   overflow: scroll;
   scroll-behavior: smooth;
-  max-height: 475px; }
+  max-height: 400px; }
   .info__title {
     font-size: 2.5rem;
     font-weight: 500;
@@ -717,12 +717,12 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 2rem 2rem 0 2rem;
+  padding: 2rem;
   font-family: "SF Pro Display", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
   .loading__main {
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 90vw;
     grid-template-rows: auto;
     grid-template-areas: "logo" "nav" "info";
     grid-gap: 1.5rem; }
@@ -739,8 +739,17 @@ header {
     .loading #animated-svg {
       width: 350px; } }
   @media only screen and (min-width: 600px) {
-    .loading #animated-svg {
-      width: 525px; } }
+    .loading {
+      padding: 2rem 2rem 0 2rem; }
+      .loading__main {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "logo" "nav" "info";
+        grid-gap: 1.5rem; }
+      .loading #animated-svg {
+        width: 525px; } }
   @media only screen and (min-width: 1000px) {
     .loading {
       padding: 5rem 10rem 2rem; }
@@ -760,8 +769,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   padding: 1rem 0 2rem 1rem;
-  overflow: hidden;
-  width: 400px; }
+  overflow: hidden; }
   .nav__container {
     display: flex;
     align-items: center;
@@ -776,8 +784,8 @@ header {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    width: 56px;
-    height: 56px;
+    width: 50px;
+    height: 45px;
     padding: .75rem;
     background-color: white;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.35);
@@ -806,10 +814,12 @@ header {
     .nav__icon.-active {
       box-shadow: inset 0 0 0 15px rgba(66, 116, 174, 0.3);
       border-color: #4274ae; }
-  @media only screen and (min-width: 1000%) {
+  @media only screen and (min-width: 600px) {
     .nav {
-      padding: 2rem 0 2rem 2rem;
-      width: max-content; } }
+      width: 400px; }
+      .nav__icon {
+        width: 56px;
+        height: 56px; } }
 
 .projects {
   display: flex;
