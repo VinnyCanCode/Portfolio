@@ -2,17 +2,10 @@
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
 
-@font-face {
-    font-family: 'Maharlika-Regular';
-    src: url('./fonts/Maharlika-Regular.ttf') format('ttf'),
-        url('./fonts/Maharlika-Regular.ttf') format('ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-
 // FONT VARIABLES
 $primary-font: 'Maharlika-Regular',
 sans-serif;
+$new-font: 'SF Pro Display','Helvetica Neue','Helvetica','Arial',sans-serif;
 
 
 // COLOR VARIABLES
@@ -23,12 +16,26 @@ $color-slate-blue: #7678ED;
 $box-shadow: 0 1rem 2rem rgba(black, .05);
 $box-shadow-1: 0 1rem 2rem rgba(black, .1);
 
+// COLOR PALETTE 
+$white: #ffffff !default;
+$gray-100: #d3d3d3 !default;
+$gray-200: #b8b7b7 !default;
+$gray-300: #959595 !default;
+$gray-400: #7f7f7f !default;
+$gray-500: #706f6f !default;
+$gray-600: #595959 !default;
+$gray-700: #494949 !default;
+$gray-800: #373736 !default;
+$gray-900: #1d1c1c !default;
+$black: #000000 !default;
+
 
 // MEDIA QUERY VARIABLES 
 $bp-xxl: 80.31rem; // 1285px
 $bp-xl: 73rem; // 1168px
 $bp-large: 54.31rem; // 869px
 $bp-large-2: 52.19rem; // 835px
+$bp-med: 600px; // 835px
 $bp-phone-1: 26.56rem; // 425px
 $bp-phone-2: 23.5rem; // 376px
 

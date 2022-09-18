@@ -1,0 +1,95 @@
+.nav {
+    grid-area: nav;
+
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 0 2rem 1rem;
+    overflow: hidden;
+    width: 400px;
+
+
+    &__container {
+        display: flex;
+        align-items: center;
+        width: max-content;
+
+        background-color: $white;
+        padding: 2rem 4.5rem;
+        margin-left: -3rem;
+        
+        border-radius: 0 15px 15px 0;
+        box-shadow: 5px 10px 10px rgba($black, .15);
+    }
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+
+        width: 56px;
+        height: 56px;
+        padding: .75rem;
+
+        background-color: white;
+        box-shadow: 0 1px 2px 0 rgba(0,0,0, .35);
+        border-radius: 10px;
+        border: 2px solid transparent;
+
+        position: relative;
+
+        &:not(:last-of-type) {
+            margin-right: 1.5rem;
+        }
+
+        &:hover {
+            box-shadow:  0 0 0 5px rgba($gray-500, .4);
+        }
+
+        &.portfolio {
+
+            img {
+                border-radius: 50%;
+                height: 40px;
+                width: 40px;
+            }
+        }
+
+        &.linkedin {
+            padding: 1.2rem;
+        }
+
+        &.github {
+            &.-active {
+                box-shadow: inset 0 0 0 5px rgba(#4274ae, .3);
+            }
+        }
+        &.twitter {
+            &.-active {
+                box-shadow: inset 0 0 0 5px rgba(#4274ae, .3);
+            }
+        }
+        &.email {
+            &.-active {
+                box-shadow: inset 0 0 0 25px rgba(#4274ae, .3);
+            }
+        }
+
+        img {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        &.-active {
+            box-shadow: inset 0 0 0 15px rgba(#4274ae, .3);
+            border-color: #4274ae;
+        }
+
+    }
+
+    @media only screen and (min-width: 1000%) {
+        padding: 2rem 0 2rem 2rem;
+        width: max-content;
+    }
+
+}

@@ -1,0 +1,70 @@
+.loading {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 2rem 2rem 0 2rem;
+
+    font-family: $new-font;
+
+    &__main {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "logo"
+        "nav"
+        "info";
+        grid-gap: 1.5rem;
+    }
+
+    .logo {
+        margin-bottom: 0;
+    }
+
+
+    &__svgContainer {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    #animated-svg {
+        width: 300px;
+        height: auto;
+    }
+
+    
+    @media only screen and (min-width: 450px) {
+        #animated-svg {
+            width: 350px;
+        }   
+    }
+    @media only screen and (min-width: $bp-med) {
+        #animated-svg {
+            width: 525px;
+        }
+    }
+
+
+    @media only screen and (min-width: 1000px) {
+        padding: 5rem 10rem 2rem;
+
+        &__main {
+            max-width: 1300px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 2fr;
+            grid-template-rows: max-content max-content 1fr;
+            grid-template-areas: 
+            "logo ."
+            "info nav"
+            "info contact";
+            grid-gap: 1.5rem;
+        }     
+        #animated-svg {
+            width: 550px;
+        }
+    }
+}

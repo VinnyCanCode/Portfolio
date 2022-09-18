@@ -9,11 +9,17 @@ module.exports = {
   },
   devServer: {
     contentBase: './dist',
+    watchContentBase: true,
+    hotOnly: true,
   },
   plugins: [
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: './src/index.html',
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'old-portfolio.html',
+      template: './src/old-portfolio.html',
     }),
   ],
   module: {

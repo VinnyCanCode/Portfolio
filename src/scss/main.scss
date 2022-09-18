@@ -2,6 +2,8 @@
 // This file contains all imported sass files
 // -----------------------------------------------------------------------------
 
+@import 'base/fonts';
+
 // ABSTRACT SCSS FILES 
 @import 'abstracts/animations';
 @import 'abstracts/mixins';
@@ -17,8 +19,14 @@
 
 // LAYOUT SCSS FILES
 @import 'layout/about';
+@import 'layout/apple-bubble';
 @import 'layout/connect';
+@import 'layout/contact';
 @import 'layout/footer';
 @import 'layout/header';
+@import 'layout/info';
+@import 'layout/loading';
+@import 'layout/nav';
 @import 'layout/projects';
 @import 'layout/stack';
+@import 'layout/tooltip';
